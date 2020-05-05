@@ -10,7 +10,6 @@ class Index
 
     public function hello($name = 'ThinkPHP5')
     {
-//aaaaaa
         return 'hello,' . $name;
     }
 }
