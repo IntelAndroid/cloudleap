@@ -1,20 +1,11 @@
 <?php
+//统一设置兼容请求
+\think\facade\Url::root('index.php?s=');
 // +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK ]
+// | Route 配置文件
 // +----------------------------------------------------------------------
-// | Copyright (c) 2006~2018 http://thinkphp.cn All rights reserved.
+// | Author: zcc time: 2020-05-06
 // +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: liu21st <liu21st@gmail.com>
-// +----------------------------------------------------------------------
-
-Route::get('think', function () {
-    return 'hello,ThinkPHP5!';
-});
-
+Route::get('think', function () {return 'hello,ThinkPHP5!';});
 Route::get('hello/:name', 'index/hello');
-
-return [
-
-];
+return [];
