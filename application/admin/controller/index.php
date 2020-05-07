@@ -1,5 +1,7 @@
 <?php
+
 namespace app\admin\controller;
+
 use app\admin\model\AdminUser as AdminUserModel;
 use app\common\controller\AdminBaseController;
 
@@ -9,9 +11,14 @@ use app\common\controller\AdminBaseController;
  * Date: 2020/5/6 0006
  * Time: 下午 10:28
  */
-class Index extends AdminBaseController{
-
-    public function index(){
-dump(AdminUserModel::get(['admin_user_id'=>1]));
+class Index extends AdminBaseController
+{
+    /**
+     *后台首页
+     * @return mixed
+     */
+    public function index()
+    {
+        return $this->fetch();
     }
 }
